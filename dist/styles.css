@@ -1,0 +1,278 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    padding-top: 5em;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: crosshair;
+    background-color: #242424;
+    width: 100%;
+    
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e7e5e4;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #999999;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+  }
+
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height:60px;
+    background-color: #242424;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-right: 30px;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+nav >.left{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  right: 1300px;
+  gap: 20px;
+}
+
+
+nav >.right{
+  display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-right: 30px;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.right > div,.left > div{
+  background-color: teal;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.name{
+    width: 670px;
+    font-size: 100px;
+    position: relative;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.12em;
+    color: white;
+    animation: typing 2.7s steps(25, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 670px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+.main{
+    background-color: #242424;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    
+}
+
+.title{
+    color: white;
+    font-size: 70px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 65px;
+    width: 400px;
+    border-bottom: white 10px solid;
+    
+}
+
+
+
+.description{
+    font-size: 40px;
+    color: white;
+}
+
+.projects{
+  display: grid;
+  margin: 10px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.project{
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  border:solid black ;
+  gap: 10px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.project > img{
+  width: 100%;
+  height: 70%;
+  border-bottom: solid 3px black;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project > .buttons{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+.project > .pName{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.skip > a{
+  color: white;
+  text-decoration: none;
+}
+
+.link{
+  color: greenyellow;
+  text-decoration: none;
+}
+
+i{
+  font-size: 200px;
+}
+
+.left > a >i{
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.technologies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap:10px
+}
+
+.tech{
+  border: solid ;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  flex-direction: column;
+  
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.tech> div{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+} 
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 500px;
+  align-items: start;
+  margin-bottom: 200px;
+}
+
+.fName{
+  width: 500px;
+  background-color: #3a3a3a;
+  color: white;
+}
+.message{
+  background-color: #3a3a3a;
+  color: white;
+
+  width: 500px;
+  height: 200px;
+}
+
+button{
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  background-color: #3a3a3a;
+color: white;
+}
